@@ -2,3 +2,20 @@
     margin: 0 auto;
     max-width: 1440px;
 }
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $Dark-Blue;
+}
+
+.button {
+    background-image: linear-gradient(90deg, $Bright-Cyan, $Lime-Green);
+    padding: 1em 2em;
+    border-radius: 25px;
+    color: $White;
+    font-weight: 700;
+    text-decoration: none;
+}
