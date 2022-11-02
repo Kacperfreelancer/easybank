@@ -29,6 +29,27 @@ body {
     align-items: center;
     padding: 1em;
     background-color: $Very-Light-Gray;
+
+    &__menu {
+        display: flex;
+        display: none;
+        list-style: none;
+
+        &-item {
+
+            & a {
+                text-decoration: none;
+                color: $Grayish-Blue;
+                padding: 1em;
+
+            }
+        }
+    }
+
+    &-cta {
+        display: none;
+        border-radius: 30px;
+    }
 }
 
 .hamburger-menu {
@@ -115,6 +136,12 @@ body {
 //  =====================================================================
 
 @media(min-width:756px) {
+
+    .hamburger-menu,
+    .navbar__icon {
+        display: none;
+    }
+
     .header {
         margin-top: 2em;
         flex-direction: row;
@@ -130,7 +157,7 @@ body {
             text-align: left;
             padding: 3em;
             width: 50%;
-
+            font-size: 2rem;
 
             &-cta {
                 margin: 2em 0;
@@ -141,6 +168,14 @@ body {
 }
 
 @media(min-width:992px) {
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navbar-cta {
+        display: block;
+    }
+
     .header {
 
         &__img-box {
