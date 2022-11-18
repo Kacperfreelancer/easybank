@@ -21,6 +21,11 @@
     font-size: 1.6rem;
     white-space: nowrap;
     text-align: center;
+    transition: filter .3s;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
 }
 
 .hover-animation {
