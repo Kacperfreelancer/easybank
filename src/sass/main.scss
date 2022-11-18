@@ -133,9 +133,57 @@ body {
     }
 }
 
+.about {
+    background-color: $Very-Light-Gray;
+
+    &__intro {
+
+        padding: 1em;
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        text-align: center;
+
+        &-item {
+            padding: 1em;
+            margin: 2em 0;
+
+            &-title {
+                color: $Dark-Blue;
+                font-weight: 300;
+                margin: 1em 0;
+                font-size: 2.2rem;
+            }
+
+            & p {
+                font-size: 1.5rem;
+                line-height: 140%;
+            }
+        }
+    }
+}
+
 
 // MEDIA QUERIES 🤔
 //  =====================================================================
+@media(min-width:567px) {
+    .about {
+
+        &__box {
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            &-item {
+                width: 50%;
+            }
+        }
+    }
+}
 
 @media(min-width:756px) {
 
@@ -186,5 +234,26 @@ body {
             background-size: cover;
         }
 
+    }
+
+    .about {
+
+        &__intro {
+            padding-left: 2em;
+            font-size: 1.8rem;
+            text-align: left;
+            width: 60%;
+
+            & h2 {
+                font-size: 5rem;
+                text-align-last: left;
+            }
+        }
+
+        &__box {
+            &-item {
+                width: 25%;
+            }
+        }
     }
 }
